@@ -1,27 +1,28 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { Home } from "lucide-react"
 import FormWizard from "@/components/FormWizard"
 
 export default function FormPage() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Header */}
+      {/* Header with Navigation */}
       <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center text-gray-600 hover:text-gray-900 transition">
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              Back to Home
-            </Link>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-ntuc-red rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">N</span>
-              </div>
-              <span className="font-semibold text-gray-900">NTUC Digital Concierge</span>
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-ntuc-red rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">N</span>
             </div>
+            <span className="font-bold text-xl text-gray-900">NTUC Digital Concierge</span>
           </div>
+          <Link 
+            href="/" 
+            className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-ntuc-red transition"
+          >
+            <Home className="w-4 h-4" />
+            Back to Home
+          </Link>
         </div>
       </header>
 

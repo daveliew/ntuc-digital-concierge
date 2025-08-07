@@ -1,0 +1,6 @@
+{
+  "/flow/page": "app/flow/page.js",
+  "/services/page": "app/services/page.js",
+  "/page": "app/page.js",
+  "/form/page": "app/form/page.js"
+}

@@ -1,7 +1,7 @@
 'use client';
 
 import { questions } from '@/lib/questions';
-import { Briefcase, Search, User, Heart, ChevronRight, Phone, AlertCircle, Home } from 'lucide-react';
+import { Briefcase, Search, User, Heart, Phone, Home } from 'lucide-react';
 import Link from 'next/link';
 
 export default function FlowVisualization() {
@@ -38,12 +38,34 @@ export default function FlowVisualization() {
 
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl font-bold mb-2">NTUC Service Finder - Current Question Flow</h1>
-          <p className="text-gray-600 mb-8">Linear flow implementation from questions.ts (7 steps)</p>
+          <h1 className="text-3xl font-bold mb-2">How Our Smart Recommendation System Works</h1>
+          <p className="text-gray-600 mb-8">7 quick questions to match you with the perfect NTUC services</p>
           
+          {/* Simple Explanation Box */}
+          <div className="bg-blue-50 border-2 border-ntuc-blue/20 rounded-xl p-6 mb-8">
+            <h2 className="text-xl font-bold text-ntuc-blue mb-3">Our Recommendation Approach</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-ntuc-blue mb-2">7</div>
+                <div className="text-lg font-semibold mb-1">Quick Questions</div>
+                <p className="text-sm text-gray-600">About your situation and needs</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl mb-2">→</div>
+                <div className="text-lg font-semibold mb-1">Smart Analysis</div>
+                <p className="text-sm text-gray-600">AI matches your profile to services</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-600 mb-2">Top 3</div>
+                <div className="text-lg font-semibold mb-1">Best Matches</div>
+                <p className="text-sm text-gray-600">From 25+ NTUC services</p>
+              </div>
+            </div>
+          </div>
+
           {/* Current Implementation Flow */}
           <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <h2 className="text-xl font-semibold mb-6">Current Implementation (Linear)</h2>
+            <h2 className="text-xl font-semibold mb-6">The 7-Question Journey</h2>
             
             <div className="relative">
               {/* Flow Line */}
@@ -102,66 +124,44 @@ export default function FlowVisualization() {
                   ✓
                 </div>
                 <div className="ml-16 bg-green-50 border-2 border-green-300 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-green-900">Recommendations Generated</h3>
-                  <p className="text-sm text-green-700 mt-1">Top 3 services from 25+ available</p>
+                  <h3 className="text-lg font-semibold text-green-900">Your Personalized Recommendations</h3>
+                  <p className="text-sm text-green-700 mt-2">Based on your answers, we identify:</p>
+                  <ul className="text-sm text-green-700 mt-2 space-y-1">
+                    <li>• Your user persona (worker, job seeker, employer, retiree)</li>
+                    <li>• Your specific needs and urgency level</li>
+                    <li>• Top 3 most relevant services from our 25+ offerings</li>
+                  </ul>
+                  <p className="text-sm font-semibold text-green-800 mt-3">Each recommendation includes confidence level (High/Medium/Low) and clear next steps</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Comparison with YAML Design */}
-          <div className="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6 mb-8">
-            <div className="flex items-start gap-3">
-              <AlertCircle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-0.5" />
+          {/* Why 7 Questions */}
+          <div className="bg-gradient-to-r from-ntuc-blue to-ntuc-red text-white rounded-xl p-6 mb-8">
+            <h3 className="text-xl font-bold mb-4">Why These 7 Questions?</h3>
+            <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-semibold text-yellow-900 mb-2">Note: Linear vs Branching Implementation</h3>
-                <p className="text-yellow-800 text-sm mb-3">
-                  The current implementation uses a <strong>linear flow</strong> (all users answer all 7 questions), 
-                  while the YAML specification defines a <strong>branching flow</strong> where different user types get different questions.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4 mt-4">
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">Current (Linear)</h4>
-                    <ul className="text-sm space-y-1 text-gray-600">
-                      <li>• All users: 7 questions</li>
-                      <li>• Same path for everyone</li>
-                      <li>• Simpler implementation</li>
-                      <li>• May ask irrelevant questions</li>
-                    </ul>
-                  </div>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold text-gray-900 mb-2">YAML Design (Branching)</h4>
-                    <ul className="text-sm space-y-1 text-gray-600">
-                      <li>• 3-7 questions based on persona</li>
-                      <li>• Different paths (2A/2B/2C)</li>
-                      <li>• More targeted questions</li>
-                      <li>• Better user experience</li>
-                    </ul>
-                  </div>
-                </div>
+                <h4 className="font-semibold mb-2">Each Question Serves a Purpose:</h4>
+                <ul className="text-sm space-y-2 opacity-95">
+                  <li><strong>Q1 (Persona):</strong> Identifies your user type</li>
+                  <li><strong>Q2 (Employment):</strong> Determines eligibility for specific programs</li>
+                  <li><strong>Q3 (Need):</strong> Matches services to your immediate concern</li>
+                  <li><strong>Q4 (Urgency):</strong> Prioritizes time-sensitive services</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Smart Scoring System:</h4>
+                <ul className="text-sm space-y-2 opacity-95">
+                  <li><strong>Q5 (Life Stage):</strong> Personalizes age-appropriate services</li>
+                  <li><strong>Q6 (Membership):</strong> Unlocks member-exclusive benefits</li>
+                  <li><strong>Q7 (Channel):</strong> Shows services in your preferred format</li>
+                </ul>
+                <p className="text-sm mt-3 font-semibold">Result: Precision-matched recommendations!</p>
               </div>
             </div>
           </div>
 
-          {/* Statistics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-ntuc-blue">7</div>
-              <div className="text-sm text-gray-600">Total Questions</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-green-600">4</div>
-              <div className="text-sm text-gray-600">Persona Types</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-purple-600">25+</div>
-              <div className="text-sm text-gray-600">Services Available</div>
-            </div>
-            <div className="bg-white rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-orange-600">3</div>
-              <div className="text-sm text-gray-600">Top Recommendations</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
