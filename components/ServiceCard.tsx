@@ -22,14 +22,12 @@ export default function ServiceCard({ service, rank }: ServiceCardProps) {
     switch (pillar) {
       case "protection":
         return { color: "text-red-600 bg-red-50", icon: <Shield className="w-5 h-5" /> }
+      case "progression":
+        return { color: "text-green-600 bg-green-50", icon: <Sparkles className="w-5 h-5" /> }
       case "placement":
         return { color: "text-blue-600 bg-blue-50", icon: <Users className="w-5 h-5" /> }
       case "privileges":
         return { color: "text-yellow-600 bg-yellow-50", icon: <Gift className="w-5 h-5" /> }
-      case "cdc_project":
-        return { color: "text-green-600 bg-green-50", icon: <Heart className="w-5 h-5" /> }
-      case "passion":
-        return { color: "text-purple-600 bg-purple-50", icon: <Sparkles className="w-5 h-5" /> }
       default:
         return { color: "text-gray-600 bg-gray-50", icon: null }
     }
@@ -38,7 +36,7 @@ export default function ServiceCard({ service, rank }: ServiceCardProps) {
   const pillarStyle = getPillarStyle(service.pillar)
 
   return (
-    <div className={`bg-white rounded-lg shadow-sm border-2 ${rank === 1 ? 'border-ntuc-blue' : 'border-gray-200'} p-6 hover:shadow-lg transition-shadow`}>
+    <div className={`bg-white rounded-lg shadow-sm border-2 ${rank === 1 ? 'border-ntuc-blue' : 'border-gray-200'} p-6 hover:shadow-lg transition-shadow flex flex-col h-full`}>
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center">
           {rank === 1 && (
@@ -65,7 +63,7 @@ export default function ServiceCard({ service, rank }: ServiceCardProps) {
       </div>
 
       <h3 className="text-xl font-bold text-gray-900 mb-2">{service.name}</h3>
-      <p className="text-gray-600 mb-4">{service.description}</p>
+      <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
 
       {/* Why it's recommended */}
       <div className="mb-4">
@@ -94,7 +92,7 @@ export default function ServiceCard({ service, rank }: ServiceCardProps) {
       </div>
 
       {/* CTA Button */}
-      <button className="w-full bg-ntuc-blue text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center group">
+      <button className="w-full bg-ntuc-blue text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center group mt-auto">
         {rank === 1 ? "Get Started Now" : "Learn More"}
         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
       </button>

@@ -65,7 +65,7 @@ export default function ServicesPage() {
   }, {} as Record<string, typeof servicesData.services>)
 
   // Get unique audiences
-  const allAudiences = [...new Set(servicesData.services.flatMap(s => s.targetAudience))]
+  const allAudiences = Array.from(new Set(servicesData.services.flatMap(s => s.targetAudience)))
 
   return (
     <div className="min-h-screen bg-gray-50">
