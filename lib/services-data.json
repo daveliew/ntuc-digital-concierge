@@ -21,7 +21,7 @@
     {
       "id": "utap",
       "name": "Union Training Assistance Programme (UTAP)",
-      "pillar": "protection",
+      "pillar": "progression",
       "description": "Get funding support for skills upgrading and professional development",
       "targetAudience": ["members"],
       "benefit": "Up to $500 per year for course fees",
@@ -30,7 +30,7 @@
     {
       "id": "career-coaching",
       "name": "Career Coaching",
-      "pillar": "protection",
+      "pillar": "progression",
       "description": "Receive personalized career guidance and progression planning",
       "targetAudience": ["workers", "job_seekers"],
       "benefit": "Professional career advice tailored to your goals",
@@ -84,7 +84,7 @@
     {
       "id": "project-refresh",
       "name": "Project Refresh",
-      "pillar": "cdc_project",
+      "pillar": "privileges",
       "description": "Volunteer to help improve homes for seniors and low-income families",
       "targetAudience": ["volunteers", "young_workers"],
       "benefit": "Make a meaningful impact in the community",
@@ -93,7 +93,7 @@
     {
       "id": "digi-fam",
       "name": "Digi-Fam",
-      "pillar": "passion",
+      "pillar": "progression",
       "description": "Digital skills and flexible learning programs for personal growth",
       "targetAudience": ["members", "families"],
       "benefit": "Learn at your own pace with quality content",

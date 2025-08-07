@@ -40,13 +40,18 @@ export function calculateRecommendations(answers: Record<string, string>) {
       score += 8
       reasons.push("Addresses workplace concerns directly")
     }
-    if (answers.immediate_need === "career_growth" && service.pillar === "placement") {
+    if (answers.immediate_need === "career_growth" && 
+        (service.pillar === "progression" || service.pillar === "placement")) {
       score += 8
       reasons.push("Supports your career advancement")
     }
     if (answers.immediate_need === "financial" && service.pillar === "privileges") {
       score += 8
       reasons.push("Helps reduce cost of living")
+    }
+    if (answers.immediate_need === "personal" && service.pillar === "progression") {
+      score += 8
+      reasons.push("Enhances personal development")
     }
 
     // Urgency matching
