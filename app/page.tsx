@@ -29,7 +29,7 @@ export default function Home() {
             <span className="font-bold text-xl text-gray-900">NTUC Digital Concierge</span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="#services" className="text-gray-600 hover:text-ntuc-red transition">Services</a>
+            <Link href="/services" className="text-gray-600 hover:text-ntuc-red transition">All Services</Link>
             <a href="#how-it-works" className="text-gray-600 hover:text-ntuc-red transition">How It Works</a>
             <a href="#contact" className="text-gray-600 hover:text-ntuc-red transition">Contact</a>
           </nav>
@@ -43,7 +43,7 @@ export default function Home() {
             Find Your NTUC Services in 2 Minutes
           </h1>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Get personalized recommendations from 25+ services across Protection, Placement, Privileges and more.
+            Get personalized recommendations from 25+ services across Protection, Progression, Placement, and Privileges.
             Tailored just for you.
           </p>
           
@@ -150,34 +150,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4P Model Preview */}
+      {/* 4Ps Model Preview */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Services Across 4P+1 Model</h2>
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-900">Services Across the 4Ps Model</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             NTUC services are organized to support every aspect of your work life
           </p>
-          <div className="grid md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="font-bold text-ntuc-red mb-2">Protection</h3>
-              <p className="text-sm text-gray-600">Worker rights, training, insurance</p>
+              <p className="text-sm text-gray-600">Worker rights, insurance, workplace safety</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="font-bold text-green-600 mb-2">Progression</h3>
+              <p className="text-sm text-gray-600">Skills training, career development, education</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="font-bold text-ntuc-blue mb-2">Placement</h3>
-              <p className="text-sm text-gray-600">Jobs, career transitions</p>
+              <p className="text-sm text-gray-600">Jobs, career transitions, employment matching</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
               <h3 className="font-bold text-yellow-600 mb-2">Privileges</h3>
-              <p className="text-sm text-gray-600">Discounts, member benefits</p>
+              <p className="text-sm text-gray-600">Discounts, member benefits, lifestyle perks</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="font-bold text-green-600 mb-2">CDC Project</h3>
-              <p className="text-sm text-gray-600">Community, volunteering</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="font-bold text-purple-600 mb-2">Passion</h3>
-              <p className="text-sm text-gray-600">Hobbies, wellness, learning</p>
-            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              href="/services" 
+              className="inline-flex items-center text-ntuc-blue hover:text-blue-700 font-medium"
+            >
+              Browse all 25+ services →
+            </Link>
           </div>
         </div>
       </section>
