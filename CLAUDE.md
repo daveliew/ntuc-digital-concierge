@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-NTUC Digital Concierge - A service recommendation platform that helps users find relevant NTUC services through guided questions or AI-powered chat. The system analyzes user profiles against 25+ services across Protection, Placement, Privileges, CDC Project, and Passion pillars.
+NTUC Digital Concierge - A service recommendation platform that helps users find relevant NTUC services through guided questions or AI-powered chat. The system analyzes user profiles against 25+ services across the 4Ps: Protection, Progression, Placement, and Privileges.
 
 ## Commands
 
@@ -68,12 +68,11 @@ Services are ranked by total score and top 3 are presented with confidence level
 
 Both paths converge to the same recommendation engine but with different UX approaches.
 
-#### NTUC Service Categories (4P+1 Model)
-- **Protection**: Worker rights, training, insurance
-- **Placement**: Jobs, career transitions
-- **Privileges**: Discounts, member benefits
-- **CDC Project**: Community, volunteering
-- **Passion**: Hobbies, wellness, learning
+#### NTUC Service Categories (4Ps Model)
+- **Protection**: Worker rights, insurance, workplace safety
+- **Progression**: Skills training, career development, education
+- **Placement**: Jobs, career transitions, employment matching
+- **Privileges**: Discounts, member benefits, lifestyle perks
 
 ### State Management
 - Form wizard uses local React state with step tracking
