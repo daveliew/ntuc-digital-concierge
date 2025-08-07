@@ -31,8 +31,6 @@ export default function Home() {
           <nav className="hidden md:flex space-x-6">
             <Link href="/flow" className="text-gray-600 hover:text-ntuc-red transition">View Flow</Link>
             <Link href="/services" className="text-gray-600 hover:text-ntuc-red transition">All Services</Link>
-            <a href="#how-it-works" className="text-gray-600 hover:text-ntuc-red transition">How It Works</a>
-            <a href="#contact" className="text-gray-600 hover:text-ntuc-red transition">Contact</a>
           </nav>
         </div>
       </header>
@@ -202,7 +200,6 @@ export default function Home() {
           <div className="flex justify-center space-x-6">
             <a href="#" className="hover:text-ntuc-red transition">Privacy</a>
             <a href="#" className="hover:text-ntuc-red transition">Terms</a>
-            <a href="#" className="hover:text-ntuc-red transition">Contact</a>
             <a href="tel:62138008" className="hover:text-ntuc-red transition flex items-center">
               <Phone className="w-4 h-4 mr-1" />
               Hotline: 6213-8008

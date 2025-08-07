@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowLeft, Shield, TrendingUp, Briefcase, Gift, Search, Filter } from "lucide-react"
+import { Home, Shield, TrendingUp, Briefcase, Gift, Search, Filter } from "lucide-react"
 import servicesData from "@/lib/services-data.json"
 
 const pillarConfig = {
@@ -69,14 +69,22 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      {/* Header with Navigation */}
+      <header className="bg-white shadow-sm border-b sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-gray-600 hover:text-gray-900">
-            <ArrowLeft className="w-5 h-5" />
-            <span>Back to Home</span>
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-ntuc-red rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">N</span>
+            </div>
+            <span className="font-bold text-xl text-gray-900">All NTUC Services</span>
+          </div>
+          <Link 
+            href="/" 
+            className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-ntuc-red transition"
+          >
+            <Home className="w-4 h-4" />
+            Back to Home
           </Link>
-          <h1 className="text-xl font-bold text-gray-900">All NTUC Services</h1>
         </div>
       </header>
 
