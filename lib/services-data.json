@@ -2,111 +2,237 @@
   "services": [
     {
       "id": "workplace-advisory",
-      "name": "Workplace Advisory",
+      "name": "Workplace Advisory Services",
       "pillar": "protection",
-      "description": "Get expert help with employment rights, contract disputes, and workplace issues",
-      "targetAudience": ["workers", "freelancers"],
+      "description": "Employment rights consultation and dispute resolution",
+      "targetAudience": ["worker", "freelancer", "gig_worker"],
       "benefit": "Free consultation on employment rights and TS-SEP compliance",
       "channels": ["physical", "hotline", "digital"]
     },
     {
       "id": "legal-assistance",
-      "name": "Legal Assistance (LawWorks)",
+      "name": "LawWorks Legal Assistance",
       "pillar": "protection",
-      "description": "Access free legal clinics and primers for workplace-related legal issues",
-      "targetAudience": ["workers"],
+      "description": "Legal clinics and primers for workplace issues",
+      "targetAudience": ["worker", "freelancer", "gig_worker"],
       "benefit": "Free legal advice from qualified lawyers",
       "channels": ["physical", "digital"]
     },
     {
+      "id": "ntuc-gift",
+      "name": "NTUC GIFT Insurance",
+      "pillar": "protection",
+      "description": "Total and permanent disability coverage",
+      "targetAudience": ["worker", "freelancer", "gig_worker", "retired"],
+      "benefit": "Coverage up to SGD 40,000",
+      "channels": ["digital"]
+    },
+    {
+      "id": "progressive-wage",
+      "name": "Progressive Wage Model",
+      "pillar": "protection",
+      "description": "Structured wage progression for lower-wage workers",
+      "targetAudience": ["worker"],
+      "benefit": "Career advancement pathway with guaranteed wage increases",
+      "channels": ["policy", "advocacy"]
+    },
+    {
+      "id": "advocacy",
+      "name": "Worker Rights Advocacy",
+      "pillar": "protection",
+      "description": "Campaign initiatives for better working conditions",
+      "targetAudience": ["worker", "freelancer", "gig_worker"],
+      "benefit": "Collective voice for better working standards",
+      "channels": ["campaigns", "media", "events"]
+    },
+    {
+      "id": "union-activities",
+      "name": "Union Activities",
+      "pillar": "protection",
+      "description": "Collective action, meetings, and representation",
+      "targetAudience": ["worker"],
+      "benefit": "Participate in union decision-making and representation",
+      "channels": ["physical", "digital"]
+    },
+    {
       "id": "utap",
-      "name": "Union Training Assistance Programme (UTAP)",
+      "name": "Union Training Assistance Programme",
       "pillar": "progression",
-      "description": "Get funding support for skills upgrading and professional development",
-      "targetAudience": ["members"],
-      "benefit": "Up to $500 per year for course fees",
+      "description": "Funding support for upskilling and reskilling",
+      "targetAudience": ["worker", "freelancer", "gig_worker"],
+      "benefit": "Up to SGD 500 per year for course fees",
       "channels": ["digital", "physical"]
     },
     {
       "id": "career-coaching",
       "name": "Career Coaching",
       "pillar": "progression",
-      "description": "Receive personalized career guidance and progression planning",
-      "targetAudience": ["workers", "job_seekers"],
-      "benefit": "Professional career advice tailored to your goals",
+      "description": "Professional career progression advice and guidance",
+      "targetAudience": ["worker", "job_seeker", "freelancer"],
+      "benefit": "Personalized career development planning",
       "channels": ["physical", "digital", "virtual"]
     },
     {
-      "id": "job-security-council",
-      "name": "Job Security Council",
+      "id": "ctc-grant",
+      "name": "Company Training Committee Grant",
+      "pillar": "progression",
+      "description": "Grants for companies to support workforce transformation",
+      "targetAudience": ["employer", "worker"],
+      "benefit": "Funding for workplace training initiatives",
+      "channels": ["digital"]
+    },
+    {
+      "id": "digi-fam",
+      "name": "Digi-Fam",
+      "pillar": "progression",
+      "description": "Digital skills and flexible learning programs",
+      "targetAudience": ["worker", "retired", "freelancer"],
+      "benefit": "Learn digital skills at your own pace",
+      "channels": ["online", "workshops"]
+    },
+    {
+      "id": "career-development",
+      "name": "Career Development Programs",
+      "pillar": "progression",
+      "description": "Skills-based job matching and career progression",
+      "targetAudience": ["worker", "job_seeker"],
+      "benefit": "Structured career advancement opportunities",
+      "channels": ["digital", "physical"]
+    },
+    {
+      "id": "industry-transformation",
+      "name": "Industry Transformation Support",
       "pillar": "placement",
-      "description": "AI-powered job matching and placement services",
-      "targetAudience": ["job_seekers", "employers"],
-      "benefit": "Quick matching with suitable opportunities",
+      "description": "Help workers transition to new economy roles",
+      "targetAudience": ["worker", "job_seeker"],
+      "benefit": "Support for career transitions to growing industries",
+      "channels": ["physical", "digital", "training"]
+    },
+    {
+      "id": "professional-development",
+      "name": "Professional Development",
+      "pillar": "placement",
+      "description": "PME job placement and career transitions",
+      "targetAudience": ["worker", "job_seeker", "employer"],
+      "benefit": "Specialized support for professional roles",
+      "channels": ["digital", "physical"]
+    },
+    {
+      "id": "job-security-council",
+      "name": "NTUC Job Security Council",
+      "pillar": "placement",
+      "description": "Employee-employer matching and placement services",
+      "targetAudience": ["job_seeker", "employer"],
+      "benefit": "AI-powered job matching with suitable opportunities",
       "channels": ["digital", "physical"]
     },
     {
       "id": "employment-support",
       "name": "Employment Support Services",
       "pillar": "placement",
-      "description": "Comprehensive job search assistance including resume help and interview prep",
-      "targetAudience": ["job_seekers"],
-      "benefit": "End-to-end support for your job search",
+      "description": "Comprehensive job search assistance",
+      "targetAudience": ["job_seeker"],
+      "benefit": "End-to-end support including resume help and interview prep",
       "channels": ["physical", "digital"]
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness Programs",
+      "pillar": "progression",
+      "description": "Health, fitness, and lifestyle activities",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Comprehensive health and wellness support",
+      "channels": ["physical", "digital", "events"]
     },
     {
       "id": "fairprice-discounts",
       "name": "FairPrice Discounts",
       "pillar": "privileges",
-      "description": "Save on groceries and daily essentials at FairPrice outlets",
-      "targetAudience": ["members"],
-      "benefit": "Up to 5% discount on purchases",
+      "description": "Grocery savings at FairPrice outlets",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Up to 5% discount on grocery purchases",
       "channels": ["physical", "online"]
     },
     {
       "id": "kopitiam-discounts",
       "name": "Kopitiam Meal Discounts",
       "pillar": "privileges",
-      "description": "Enjoy affordable meals at Kopitiam food courts",
-      "targetAudience": ["members"],
-      "benefit": "Special member pricing on meals",
+      "description": "Affordable dining at Kopitiam food courts",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Special member pricing on meals and beverages",
       "channels": ["physical"]
     },
     {
-      "id": "ntuc-gift",
-      "name": "NTUC GIFT Insurance",
-      "pillar": "protection",
-      "description": "Group insurance coverage for total and permanent disability",
-      "targetAudience": ["members"],
-      "benefit": "Coverage up to $40,000",
-      "channels": ["digital"]
+      "id": "singtel-discounts",
+      "name": "Singtel Plan Discounts",
+      "pillar": "privileges",
+      "description": "Telecommunications and mobile plan savings",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Exclusive discounts on mobile and broadband plans",
+      "channels": ["online", "physical"]
+    },
+    {
+      "id": "link-credit-card",
+      "name": "NTUC Link Credit Card",
+      "pillar": "privileges",
+      "description": "Credit card with LinkPoints and rebates",
+      "targetAudience": ["worker", "freelancer", "gig_worker"],
+      "benefit": "Earn LinkPoints and cashback on purchases",
+      "channels": ["digital", "physical"]
+    },
+    {
+      "id": "recreation-discounts",
+      "name": "Recreation & Attraction Discounts",
+      "pillar": "privileges",
+      "description": "Discounts at Wild Wild Wet and other attractions",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Family-friendly discounts at popular attractions",
+      "channels": ["physical", "online"]
+    },
+    {
+      "id": "membership-gifts",
+      "name": "Membership Sign-up Gifts",
+      "pillar": "privileges",
+      "description": "Welcome benefits for new members",
+      "targetAudience": ["worker", "job_seeker", "freelancer", "gig_worker"],
+      "benefit": "Exclusive welcome gifts and starter benefits",
+      "channels": ["physical", "digital"]
     },
     {
       "id": "project-refresh",
       "name": "Project Refresh",
       "pillar": "privileges",
-      "description": "Volunteer to help improve homes for seniors and low-income families",
-      "targetAudience": ["volunteers", "young_workers"],
-      "benefit": "Make a meaningful impact in the community",
+      "description": "Home improvement for seniors and low-income families (member benefit)",
+      "targetAudience": ["worker", "retired"],
+      "benefit": "Volunteer opportunity to help vulnerable families",
       "channels": ["community", "digital"]
     },
     {
-      "id": "digi-fam",
-      "name": "Digi-Fam",
-      "pillar": "progression",
-      "description": "Digital skills and flexible learning programs for personal growth",
-      "targetAudience": ["members", "families"],
-      "benefit": "Learn at your own pace with quality content",
-      "channels": ["online", "workshops"]
+      "id": "community-service",
+      "name": "Community Service Initiatives",
+      "pillar": "privileges",
+      "description": "Various volunteer and community support programs (member engagement)",
+      "targetAudience": ["worker", "retired", "job_seeker"],
+      "benefit": "Meaningful volunteer opportunities to give back",
+      "channels": ["community", "digital"]
     },
     {
-      "id": "membership-signup",
-      "name": "NTUC Membership",
+      "id": "interest-groups",
+      "name": "Special Interest Groups",
       "pillar": "privileges",
-      "description": "Join NTUC to unlock all member benefits and services",
-      "targetAudience": ["non_members"],
-      "benefit": "Access to exclusive deals, training funds, and protection",
-      "channels": ["digital", "physical"]
+      "description": "Hobby and passion-based communities",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Connect with like-minded members through shared interests",
+      "channels": ["community", "online"]
+    },
+    {
+      "id": "cultural-activities",
+      "name": "Cultural Activities",
+      "pillar": "privileges",
+      "description": "Arts, heritage, and cultural programs",
+      "targetAudience": ["worker", "retired", "freelancer", "gig_worker"],
+      "benefit": "Enrich your life through arts and cultural experiences",
+      "channels": ["events", "workshops", "exhibitions"]
     }
   ]
 }
