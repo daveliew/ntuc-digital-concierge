@@ -29,6 +29,7 @@ export default function Home() {
             <span className="font-bold text-xl text-gray-900">NTUC Digital Concierge</span>
           </div>
           <nav className="hidden md:flex space-x-6">
+            <Link href="/flow" className="text-gray-600 hover:text-ntuc-red transition">View Flow</Link>
             <Link href="/services" className="text-gray-600 hover:text-ntuc-red transition">All Services</Link>
             <a href="#how-it-works" className="text-gray-600 hover:text-ntuc-red transition">How It Works</a>
             <a href="#contact" className="text-gray-600 hover:text-ntuc-red transition">Contact</a>
@@ -52,21 +53,21 @@ export default function Home() {
             {/* Form Option */}
             <Link href="/form" className="group">
               <div 
-                className={`bg-white rounded-xl p-8 shadow-lg transition-all duration-300 cursor-pointer
+                className={`bg-white rounded-xl p-8 shadow-lg transition-all duration-300 cursor-pointer flex flex-col h-full
                   ${hoveredCard === 'form' ? 'transform -translate-y-2 shadow-2xl' : ''}
                   hover:shadow-2xl`}
                 onMouseEnter={() => setHoveredCard('form')}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className="flex flex-col items-center text-gray-900">
+                <div className="flex flex-col items-center text-gray-900 h-full">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-200 transition">
                     <ClipboardList className="w-10 h-10 text-ntuc-blue" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Quick Questions</h3>
-                  <p className="text-gray-600 text-center mb-4">
+                  <p className="text-gray-600 text-center mb-4 flex-grow">
                     Answer 5-7 guided questions for instant recommendations
                   </p>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-6">
                     <span className="flex items-center">
                       <Clock className="w-4 h-4 mr-1" />
                       2 min
@@ -76,7 +77,7 @@ export default function Home() {
                       Most popular
                     </span>
                   </div>
-                  <button className="mt-6 bg-ntuc-blue text-white px-6 py-3 rounded-lg font-semibold group-hover:bg-blue-700 transition">
+                  <button className="bg-ntuc-blue text-white px-6 py-3 rounded-lg font-semibold group-hover:bg-blue-700 transition mt-auto">
                     Start Questions →
                   </button>
                 </div>
@@ -86,21 +87,21 @@ export default function Home() {
             {/* Chat Option */}
             <Link href="/chat" className="group">
               <div 
-                className={`bg-white rounded-xl p-8 shadow-lg transition-all duration-300 cursor-pointer
+                className={`bg-white rounded-xl p-8 shadow-lg transition-all duration-300 cursor-pointer flex flex-col h-full
                   ${hoveredCard === 'chat' ? 'transform -translate-y-2 shadow-2xl' : ''}
                   hover:shadow-2xl`}
                 onMouseEnter={() => setHoveredCard('chat')}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className="flex flex-col items-center text-gray-900">
+                <div className="flex flex-col items-center text-gray-900 h-full">
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition">
                     <MessageSquare className="w-10 h-10 text-green-600" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Chat with Assistant</h3>
-                  <p className="text-gray-600 text-center mb-4">
+                  <p className="text-gray-600 text-center mb-4 flex-grow">
                     Have a natural conversation about your needs
                   </p>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-6">
                     <span className="flex items-center">
                       <Clock className="w-4 h-4 mr-1" />
                       Flexible
@@ -110,7 +111,7 @@ export default function Home() {
                       AI-Powered
                     </span>
                   </div>
-                  <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold group-hover:bg-green-700 transition">
+                  <button className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold group-hover:bg-green-700 transition mt-auto">
                     Start Chat →
                   </button>
                 </div>
@@ -147,6 +148,14 @@ export default function Home() {
               <p className="text-gray-600">Receive your top 3 services with clear next steps</p>
             </div>
           </div>
+          <div className="text-center mt-12">
+            <Link 
+              href="/flow" 
+              className="inline-flex items-center px-6 py-3 bg-ntuc-blue text-white rounded-lg hover:bg-blue-700 transition font-medium"
+            >
+              Explore the Question Flow →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -158,21 +167,21 @@ export default function Home() {
             NTUC services are organized to support every aspect of your work life
           </p>
           <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col h-full">
               <h3 className="font-bold text-ntuc-red mb-2">Protection</h3>
-              <p className="text-sm text-gray-600">Worker rights, insurance, workplace safety</p>
+              <p className="text-sm text-gray-600 flex-grow">Worker rights, insurance, workplace safety</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col h-full">
               <h3 className="font-bold text-green-600 mb-2">Progression</h3>
-              <p className="text-sm text-gray-600">Skills training, career development, education</p>
+              <p className="text-sm text-gray-600 flex-grow">Skills training, career development, education</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col h-full">
               <h3 className="font-bold text-ntuc-blue mb-2">Placement</h3>
-              <p className="text-sm text-gray-600">Jobs, career transitions, employment matching</p>
+              <p className="text-sm text-gray-600 flex-grow">Jobs, career transitions, employment matching</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col h-full">
               <h3 className="font-bold text-yellow-600 mb-2">Privileges</h3>
-              <p className="text-sm text-gray-600">Discounts, member benefits, lifestyle perks</p>
+              <p className="text-sm text-gray-600 flex-grow">Discounts, member benefits, lifestyle perks</p>
             </div>
           </div>
           <div className="text-center mt-8">
