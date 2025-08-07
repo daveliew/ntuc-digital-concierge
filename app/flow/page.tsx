@@ -41,9 +41,9 @@ export default function FlowVisualization() {
           <h1 className="text-3xl font-bold mb-2">How Our Smart Recommendation System Works</h1>
           <p className="text-gray-600 mb-8">7 quick questions to match you with the perfect NTUC services</p>
           
-          {/* Why 7 Questions */}
-          <div className="bg-white border rounded-xl p-6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Why These 7 Questions?</h3>
+          {/* Why These 7 Questions */}
+          <div className="bg-blue-50 border-2 border-ntuc-blue/20 rounded-xl p-6 mb-8">
+            <h2 className="text-xl font-bold text-ntuc-blue mb-4">Why These 7 Questions?</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold mb-2">Each Question Serves a Purpose:</h4>
@@ -62,28 +62,6 @@ export default function FlowVisualization() {
                   <li><strong>Q7 (Channel):</strong> Shows services in your preferred format</li>
                 </ul>
                 <p className="text-sm mt-3 font-semibold text-ntuc-blue">Result: Precision-matched recommendations!</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Simple Explanation Box */}
-          <div className="bg-blue-50 border-2 border-ntuc-blue/20 rounded-xl p-6 mb-8">
-            <h2 className="text-xl font-bold text-ntuc-blue mb-3">Our Recommendation Approach</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-ntuc-blue mb-2">7</div>
-                <div className="text-lg font-semibold mb-1">Quick Questions</div>
-                <p className="text-sm text-gray-600">About your situation and needs</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl mb-2">→</div>
-                <div className="text-lg font-semibold mb-1">Smart Analysis</div>
-                <p className="text-sm text-gray-600">AI matches your profile to services</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">Top 3</div>
-                <div className="text-lg font-semibold mb-1">Best Matches</div>
-                <p className="text-sm text-gray-600">From 25+ NTUC services</p>
               </div>
             </div>
           </div>
