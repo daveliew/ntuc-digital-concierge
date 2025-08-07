@@ -41,6 +41,31 @@ export default function FlowVisualization() {
           <h1 className="text-3xl font-bold mb-2">How Our Smart Recommendation System Works</h1>
           <p className="text-gray-600 mb-8">7 quick questions to match you with the perfect NTUC services</p>
           
+          {/* Why 7 Questions */}
+          <div className="bg-white border rounded-xl p-6 mb-8">
+            <h3 className="text-xl font-bold mb-4">Why These 7 Questions?</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold mb-2">Each Question Serves a Purpose:</h4>
+                <ul className="text-sm space-y-2 text-gray-700">
+                  <li><strong>Q1 (Persona):</strong> Identifies your user type</li>
+                  <li><strong>Q2 (Employment):</strong> Determines eligibility for specific programs</li>
+                  <li><strong>Q3 (Need):</strong> Matches services to your immediate concern</li>
+                  <li><strong>Q4 (Urgency):</strong> Prioritizes time-sensitive services</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2">Smart Scoring System:</h4>
+                <ul className="text-sm space-y-2 text-gray-700">
+                  <li><strong>Q5 (Life Stage):</strong> Personalizes age-appropriate services</li>
+                  <li><strong>Q6 (Membership):</strong> Unlocks member-exclusive benefits</li>
+                  <li><strong>Q7 (Channel):</strong> Shows services in your preferred format</li>
+                </ul>
+                <p className="text-sm mt-3 font-semibold text-ntuc-blue">Result: Precision-matched recommendations!</p>
+              </div>
+            </div>
+          </div>
+
           {/* Simple Explanation Box */}
           <div className="bg-blue-50 border-2 border-ntuc-blue/20 rounded-xl p-6 mb-8">
             <h2 className="text-xl font-bold text-ntuc-blue mb-3">Our Recommendation Approach</h2>
@@ -137,30 +162,6 @@ export default function FlowVisualization() {
             </div>
           </div>
 
-          {/* Why 7 Questions */}
-          <div className="bg-gradient-to-r from-ntuc-blue to-ntuc-red text-white rounded-xl p-6 mb-8">
-            <h3 className="text-xl font-bold mb-4">Why These 7 Questions?</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold mb-2">Each Question Serves a Purpose:</h4>
-                <ul className="text-sm space-y-2 opacity-95">
-                  <li><strong>Q1 (Persona):</strong> Identifies your user type</li>
-                  <li><strong>Q2 (Employment):</strong> Determines eligibility for specific programs</li>
-                  <li><strong>Q3 (Need):</strong> Matches services to your immediate concern</li>
-                  <li><strong>Q4 (Urgency):</strong> Prioritizes time-sensitive services</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Smart Scoring System:</h4>
-                <ul className="text-sm space-y-2 opacity-95">
-                  <li><strong>Q5 (Life Stage):</strong> Personalizes age-appropriate services</li>
-                  <li><strong>Q6 (Membership):</strong> Unlocks member-exclusive benefits</li>
-                  <li><strong>Q7 (Channel):</strong> Shows services in your preferred format</li>
-                </ul>
-                <p className="text-sm mt-3 font-semibold">Result: Precision-matched recommendations!</p>
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>
